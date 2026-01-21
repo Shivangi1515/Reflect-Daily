@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 900px;
+  height: 480px;
+  background: #121212;
+  border-radius: 18px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Left Panel */
+.left-panel {
+  width: 40%;
+  background: linear-gradient(135deg, #6a5acd, #836fff);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left-panel h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.left-panel p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.signup-btn {
+  padding: 10px 35px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: white;
+  color: #6a5acd;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 60%;
+  padding: 60px;
+  color: white;
+}
+
+.right-panel h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #1f1f1f;
+  color: white;
+  font-size: 14px;
+}
+
+.input-box input::placeholder {
+  color: #aaa;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.remember input {
+  accent-color: #836fff;
+  cursor: pointer;
+}
+
+.forgot {
+  color: #9f9fff;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #6a5acd, #836fff);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(106, 90, 205, 0.5);
+}
