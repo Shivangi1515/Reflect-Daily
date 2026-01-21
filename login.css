@@ -74,12 +74,13 @@ body {
 }
 
 .input-box {
+  position: relative;
   margin-bottom: 20px;
 }
 
 .input-box input {
   width: 100%;
-  padding: 14px;
+  padding: 14px 40px 14px 14px; 
   border-radius: 10px;
   border: none;
   outline: none;
@@ -87,6 +88,17 @@ body {
   color: white;
   font-size: 14px;
 }
+
+.input-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;   
+  color: #aaa;
+  pointer-events: none;
+}
+
 
 .input-box input::placeholder {
   color: #aaa;
