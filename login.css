@@ -8,8 +8,7 @@
 }
 
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(135deg, #020617, #0f172a);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,9 +17,9 @@ body{
 }
 
 .container{
-    background-color: #fff;
+    background: #ffffff;
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     position: relative;
     overflow: hidden;
     width: 768px;
@@ -33,40 +32,48 @@ body{
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
+    color: #334155;
 }
 
 .container span{
     font-size: 12px;
+    color: #64748b;
 }
 
 .container a{
-    color: #333;
+    color: #1e293b;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
 .container button{
-    background-color: #512da8;
+    background: linear-gradient(135deg, #020617, #0f172a);
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
-    border: 1px solid transparent;
+    border: none;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(15,23,42,0.7);
 }
 
 .container button.hidden{
-    background-color: transparent;
-    border-color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
 }
 
 .container form{
-    background-color: #fff;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,14 +83,19 @@ body{
 }
 
 .container input{
-    background-color: #eee;
-    border: none;
+    background: #f1f5f9;
+    border: 1px solid #cbd5f5;
     margin: 8px 0;
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
     width: 100%;
     outline: none;
+}
+
+.container input:focus{
+    border-color: #020617;
+    box-shadow: 0 0 0 2px rgba(2,6,23,0.2);
 }
 
 .form-container{
@@ -133,7 +145,7 @@ body{
 }
 
 .social-icons a{
-    border: 1px solid #ccc;
+    border: 1px solid #1e293b;
     border-radius: 20%;
     display: inline-flex;
     justify-content: center;
@@ -141,6 +153,14 @@ body{
     margin: 0 3px;
     width: 40px;
     height: 40px;
+    color: #1e293b;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    background: #020617;
+    color: #fff;
+    border-color: #020617;
 }
 
 .toggle-container{
@@ -161,9 +181,7 @@ body{
 }
 
 .toggle{
-    background-color: #512da8;
-    height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(135deg, #020617, #0f172a);
     color: #fff;
     position: relative;
     left: -100%;
@@ -188,7 +206,6 @@ body{
     padding: 0 30px;
     text-align: center;
     top: 0;
-    transform: translateX(0);
     transition: all 0.6s ease-in-out;
 }
 
@@ -202,7 +219,6 @@ body{
 
 .toggle-right{
     right: 0;
-    transform: translateX(0);
 }
 
 .container.active .toggle-right{
